@@ -18,10 +18,10 @@ def strategy_generator(p1, p2, p3, p4):
 # generating the 16 deterministic strategies:
 i = 0
 strategy_list = []
-for p1 in range(1):
-    for p2 in range(1):
-        for p3 in range(1):
-            for p4 in range(1):
+for p1 in range(2):
+    for p2 in range(2):
+        for p3 in range(2):
+            for p4 in range(2):
                 strategy_list.append(strategy_generator(p1, p2, p3, p4))
                 i += 1
 
