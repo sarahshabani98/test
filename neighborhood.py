@@ -40,6 +40,9 @@ class neighborhood:
                         PI += S[s, self.s_array[down, right]]  # lower right
                         PI += S[s, self.s_array[down, left]]  # lower left
 
-                # if self.neighboring_mode == other mode
+                elif self.neighboring_mode == 'all':
+                    for i in range(self.width):
+                        for j in range(self.height):
+                            PI += S[s, self.s_array[i, j]]
 
                 self.PI_array[i, j] = PI
